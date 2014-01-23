@@ -50,7 +50,7 @@ def vigenereDecrypt(cOrd, kOrd):
 	#Compute encrypted character order
 	order = cOrd - kOrd + ORDA
 
-	#If new order is less than a's order, loop it back
+	#If new order is less than a's order, loop it back in range
 	if order < ORDA:
 		order += ALPHALENGTH
 
@@ -64,7 +64,7 @@ def main(args):
 
 		print(vigenere(key, string, doEncrypt))
 	else:
-		print('Incorrect arguments. Usage: ciphers.py key string encrypt(True/False)')
+		print('Incorrect arguments. Usage: vigenere.py key string encrypt(True/False)')
 
 if __name__ == "__main__":
     main(sys.argv)
