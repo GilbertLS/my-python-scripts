@@ -57,14 +57,14 @@ def vigenereDecrypt(cOrd, kOrd):
 	return order
 
 def main(args):
-	if len(args) >= 3:
+	if len(args) > 3:
 		key 		= args[1]
 		string 		= args[2]
 		doEncrypt 	= (args[3] == 'True')
+
+		print(vigenere(key, string, doEncrypt))
 	else:
 		print('Incorrect arguments. Usage: ciphers.py key string encrypt(True/False)')
-	
-	print(vigenere(key, string, doEncrypt))
 
 if __name__ == "__main__":
     main(sys.argv)
