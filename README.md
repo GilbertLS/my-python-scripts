@@ -1,7 +1,10 @@
-python-vigenere
+my-python-scripts
 ===============
 
-Code written by Gilbert Lavergne-Shank
+vigenere.py: 		Vigenere Cypher.  
+insertionsort.py: 	Insertion Sort.  
+quicksort2.py: 		Quick sort that used a pivot to seperate the interger into 3 parts instead of just 2.  
+					[Smaller|Equal|Bigger]  
 
-Github beginnings.
-Learning python. Vigenere cipher.
+Coded by Gilbert Lavergne-Shank  
+http://gilbertls.com
